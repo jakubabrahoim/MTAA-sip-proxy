@@ -20,3 +20,113 @@
 [1.3 - 14:7:8] >> Trying 100 sip:ipad@192.168.100.8 --> sip:jakub-phone@192.168.100.8
 [1.3 - 14:7:8] >> Ringing 180 (Zvonenie) sip:ipad@192.168.100.8 --> sip:jakub-phone@192.168.100.8
 [1.3 - 14:7:10] >> Decline 603 (Odmietnutie) sip:ipad@192.168.100.8 --> sip:jakub-phone@192.168.100.8
+[1.3 - 14:57:26] >> REGISTER sip:ipad@192.168.100.8
+[1.3 - 14:57:26] >> REGISTER sip:ipad@192.168.100.8
+[1.3 - 14:57:26] >> REGISTER sip:ipad@192.168.100.8
+[1.3 - 14:57:47] >> REGISTER sip:ipad@192.168.100.8
+[1.3 - 14:57:53] >> REGISTER sip:jakub-phone@192.168.100.8
+[1.3 - 14:57:53] >> REGISTER sip:jakub-phone@192.168.100.8
+[1.3 - 14:57:53] >> REGISTER sip:jakub-phone@192.168.100.8
+[1.3 - 14:58:23] >> REGISTER sip:ipad@192.168.100.8
+[1.3 - 14:58:25] >> REGISTER sip:jakub-phone@192.168.100.8
+[1.3 - 14:58:31] >> INVITE (Zvonenie) sip:jakub-phone@192.168.100.8 --> sip:ipad@192.168.100.8
+[1.3 - 14:58:31] >> Trying 100 sip:jakub-phone@192.168.100.8 --> sip:ipad@192.168.100.8
+[1.3 - 14:58:31] >> Ringing 180 (Zvonenie) sip:jakub-phone@192.168.100.8 --> sip:ipad@192.168.100.8
+[1.3 - 14:58:37] >> ACK (Zdvihnutie/Zacatie hovoru) sip:jakub-phone@192.168.100.8 --> sip:ipad@192.168.100.8
+[1.3 - 14:58:48] >> BYE (Ukoncenie hovoru) sip:jakub-phone@192.168.100.8 --> sip:ipad@192.168.100.8
+[1.3 - 15:7:14] >> REGISTER sip:ipad@192.168.100.8
+[1.3 - 15:7:16] >> REGISTER sip:jakub-phone@192.168.100.8
+[1.3 - 15:7:20] >> INVITE (Zvonenie) sip:jakub-phone@192.168.100.8 --> sip:ipad@192.168.100.8
+[1.3 - 15:7:20] >> Trying 100 sip:jakub-phone@192.168.100.8 --> sip:ipad@192.168.100.8
+[1.3 - 15:7:20] >> Ringing 180 (Zvonenie) sip:jakub-phone@192.168.100.8 --> sip:ipad@192.168.100.8
+[1.3 - 15:7:27] >> Decline 603 (Odmietnutie) sip:jakub-phone@192.168.100.8 --> sip:ipad@192.168.100.8
+[1.3 - 15:11:8] >> REGISTER sip:ipad@192.168.100.8
+[1.3 - 15:11:10] >> REGISTER sip:jakub-phone@192.168.100.8
+[1.3 - 15:11:19] >> INVITE (Zvonenie) sip:jakub-phone@192.168.100.8 --> sip:ipad@192.168.100.8
+[1.3 - 15:11:19] >> Trying 100 sip:jakub-phone@192.168.100.8 --> sip:ipad@192.168.100.8
+[1.3 - 15:11:19] >> Ringing 180 (Zvonenie) sip:jakub-phone@192.168.100.8 --> sip:ipad@192.168.100.8
+[1.3 - 15:11:21] >> ACK (Zdvihnutie/Zacatie hovoru) sip:jakub-phone@192.168.100.8 --> sip:ipad@192.168.100.8
+[1.3 - 15:11:23] >> INVITE (Zvonenie) sip:jakub-phone@192.168.100.8 --> sip:ipad@192.168.100.8
+[1.3 - 15:11:23] >> Trying 100 sip:jakub-phone@192.168.100.8 --> sip:ipad@192.168.100.8
+[1.3 - 15:11:28] >> ACK (Zdvihnutie/Zacatie hovoru) sip:jakub-phone@192.168.100.8 --> sip:ipad@192.168.100.8
+[1.3 - 15:11:28] >> ACK (Zdvihnutie/Zacatie hovoru) sip:jakub-phone@192.168.100.8 --> sip:ipad@192.168.100.8
+[1.3 - 15:11:38] >> BYE (Ukoncenie hovoru) sip:jakub-phone@192.168.100.8 --> sip:ipad@192.168.100.8
+[1.3 - 15:12:27] >> REGISTER sip:ipad@192.168.100.8
+[1.3 - 15:12:28] >> REGISTER sip:jakub-phone@192.168.100.8
+[1.3 - 15:13:27] >> REGISTER sip:ipad@192.168.100.8
+[1.3 - 15:13:29] >> REGISTER sip:jakub-phone@192.168.100.8
+[1.3 - 15:13:34] >> INVITE (Zvonenie) sip:jakub-phone@192.168.100.8 --> sip:ipad@192.168.100.8
+[1.3 - 15:13:34] >> Trying 100 sip:jakub-phone@192.168.100.8 --> sip:ipad@192.168.100.8
+[1.3 - 15:13:34] >> Ringing 180 (Zvonenie) sip:jakub-phone@192.168.100.8 --> sip:ipad@192.168.100.8
+[1.3 - 15:13:37] >> ACK (Zdvihnutie/Zacatie hovoru) sip:jakub-phone@192.168.100.8 --> sip:ipad@192.168.100.8
+[1.3 - 15:13:38] >> INVITE (Zvonenie) sip:jakub-phone@192.168.100.8 --> sip:ipad@192.168.100.8
+[1.3 - 15:13:39] >> Trying 100 sip:jakub-phone@192.168.100.8 --> sip:ipad@192.168.100.8
+[1.3 - 15:13:41] >> ACK (Zdvihnutie/Zacatie hovoru) sip:jakub-phone@192.168.100.8 --> sip:ipad@192.168.100.8
+[1.3 - 15:13:41] >> ACK (Zdvihnutie/Zacatie hovoru) sip:jakub-phone@192.168.100.8 --> sip:ipad@192.168.100.8
+[1.3 - 15:13:51] >> BYE (Ukoncenie hovoru) sip:jakub-phone@192.168.100.8 --> sip:ipad@192.168.100.8
+[1.3 - 15:15:58] >> REGISTER sip:ipad@192.168.100.8
+[1.3 - 15:16:2] >> REGISTER sip:jakub-phone@192.168.100.8
+[1.3 - 15:17:53] >> REGISTER sip:ipad@192.168.100.8
+[1.3 - 15:17:55] >> REGISTER sip:jakub-phone@192.168.100.8
+[1.3 - 15:18:6] >> REGISTER sip:jakub@192.168.100.8
+[1.3 - 15:18:59] >> REGISTER sip:jakub@192.168.100.8
+[1.3 - 15:19:44] >> REGISTER sip:jakub@192.168.100.8
+[1.3 - 15:19:48] >> REGISTER sip:ipad@192.168.100.8
+[1.3 - 15:19:51] >> REGISTER sip:jakub-phone@192.168.100.8
+[1.3 - 15:20:11] >> INVITE (Zvonenie) sip:jakub@192.168.100.8 --> sip:ipad@192.168.100.8
+[1.3 - 15:20:11] >> Trying 100 sip:jakub@192.168.100.8 --> sip:ipad@192.168.100.8
+[1.3 - 15:20:11] >> Ringing 180 (Zvonenie) sip:jakub@192.168.100.8 --> sip:ipad@192.168.100.8
+[1.3 - 15:20:11] >> INVITE (Zvonenie) sip:jakub@192.168.100.8 --> sip:jakub-phone@192.168.100.8
+[1.3 - 15:20:12] >> Trying 100 sip:jakub@192.168.100.8 --> sip:jakub-phone@192.168.100.8
+[1.3 - 15:20:12] >> Ringing 180 (Zvonenie) sip:jakub@192.168.100.8 --> sip:jakub-phone@192.168.100.8
+[1.3 - 15:20:14] >> ACK (Zdvihnutie/Zacatie hovoru) sip:jakub@192.168.100.8 --> sip:jakub-phone@192.168.100.8
+[1.3 - 15:20:15] >> ACK (Zdvihnutie/Zacatie hovoru) sip:jakub@192.168.100.8 --> sip:ipad@192.168.100.8
+[1.3 - 15:20:29] >> BYE (Ukoncenie hovoru) sip:jakub@192.168.100.8 --> sip:ipad@192.168.100.8
+[1.3 - 15:20:29] >> BYE (Ukoncenie hovoru) sip:jakub@192.168.100.8 --> sip:jakub-phone@192.168.100.8
+[1.3 - 15:27:29] >> REGISTER sip:ipad@192.168.100.8
+[1.3 - 15:27:31] >> REGISTER sip:jakub-phone@192.168.100.8
+[1.3 - 15:27:38] >> REGISTER sip:jakub-linux@192.168.100.8
+[1.3 - 15:28:1] >> INVITE (Zvonenie) sip:jakub-linux@192.168.100.8 --> sip:ipad@192.168.100.8
+[1.3 - 15:28:2] >> Trying 100 sip:jakub-linux@192.168.100.8 --> sip:ipad@192.168.100.8
+[1.3 - 15:28:2] >> Ringing 180 (Zvonenie) sip:jakub-linux@192.168.100.8 --> sip:ipad@192.168.100.8
+[1.3 - 15:28:2] >> INVITE (Zvonenie) sip:jakub-linux@192.168.100.8 --> sip:jakub-phone@192.168.100.8
+[1.3 - 15:28:2] >> Trying 100 sip:jakub-linux@192.168.100.8 --> sip:jakub-phone@192.168.100.8
+[1.3 - 15:28:2] >> Ringing 180 (Zvonenie) sip:jakub-linux@192.168.100.8 --> sip:jakub-phone@192.168.100.8
+[1.3 - 15:28:4] >> ACK (Zdvihnutie/Zacatie hovoru) sip:jakub-linux@192.168.100.8 --> sip:jakub-phone@192.168.100.8
+[1.3 - 15:28:4] >> Decline 603 (Odmietnutie) sip:jakub-phone@192.168.100.8 --> sip:jakub-linux@192.168.100.8
+[1.3 - 15:28:6] >> ACK (Zdvihnutie/Zacatie hovoru) sip:jakub-linux@192.168.100.8 --> sip:ipad@192.168.100.8
+[1.3 - 15:28:6] >> Decline 603 (Odmietnutie) sip:ipad@192.168.100.8 --> sip:jakub-linux@192.168.100.8
+[1.3 - 15:28:12] >> REGISTER sip:jakub@192.168.100.8
+[1.3 - 15:28:19] >> BYE (Ukoncenie hovoru) sip:jakub-linux@192.168.100.8 --> sip:ipad@192.168.100.8
+[1.3 - 15:28:19] >> BYE (Ukoncenie hovoru) sip:jakub-linux@192.168.100.8 --> sip:jakub-phone@192.168.100.8
+[1.3 - 15:31:52] >> REGISTER sip:jakub-linux@192.168.100.8
+[1.3 - 15:32:9] >> REGISTER sip:jakub-linux@192.168.100.8
+[1.3 - 15:32:11] >> REGISTER sip:ipad@192.168.100.8
+[1.3 - 15:32:14] >> REGISTER sip:jakub-phone@192.168.100.8
+[1.3 - 15:32:18] >> INVITE (Zvonenie) sip:jakub-phone@192.168.100.8 --> sip:ipad@192.168.100.8
+[1.3 - 15:32:18] >> Trying 100 sip:jakub-phone@192.168.100.8 --> sip:ipad@192.168.100.8
+[1.3 - 15:32:18] >> Ringing 180 (Zvonenie) sip:jakub-phone@192.168.100.8 --> sip:ipad@192.168.100.8
+[1.3 - 15:32:20] >> ACK (Zdvihnutie/Zacatie hovoru) sip:jakub-phone@192.168.100.8 --> sip:ipad@192.168.100.8
+[1.3 - 15:32:27] >> INVITE (Zvonenie) sip:jakub-linux@192.168.100.8 --> sip:ipad@192.168.100.8
+[1.3 - 15:32:27] >> Trying 100 sip:jakub-linux@192.168.100.8 --> sip:ipad@192.168.100.8
+[1.3 - 15:32:27] >> Ringing 180 (Zvonenie) sip:jakub-linux@192.168.100.8 --> sip:ipad@192.168.100.8
+[1.3 - 15:32:40] >> Decline 603 (Odmietnutie) sip:jakub-linux@192.168.100.8 --> sip:ipad@192.168.100.8
+[1.3 - 15:33:44] >> REGISTER sip:jakub-linux@192.168.100.8
+[1.3 - 15:33:47] >> REGISTER sip:ipad@192.168.100.8
+[1.3 - 15:33:49] >> REGISTER sip:jakub-phone@192.168.100.8
+[1.3 - 15:34:1] >> INVITE (Zvonenie) sip:jakub-phone@192.168.100.8 --> sip:jakub-linux@192.168.100.8
+[1.3 - 15:34:1] >> Trying 100 sip:jakub-phone@192.168.100.8 --> sip:jakub-linux@192.168.100.8
+[1.3 - 15:34:2] >> Ringing 180 (Zvonenie) sip:jakub-phone@192.168.100.8 --> sip:jakub-linux@192.168.100.8
+[1.3 - 15:34:5] >> ACK (Zdvihnutie/Zacatie hovoru) sip:jakub-phone@192.168.100.8 --> sip:jakub-linux@192.168.100.8
+[1.3 - 15:34:12] >> REGISTER sip:jakub@192.168.100.8
+[1.3 - 15:34:13] >> INVITE (Zvonenie) sip:ipad@192.168.100.8 --> sip:jakub-linux@192.168.100.8
+[1.3 - 15:34:13] >> Trying 100 sip:ipad@192.168.100.8 --> sip:jakub-linux@192.168.100.8
+[1.3 - 15:34:13] >> Ringing 180 (Zvonenie) sip:ipad@192.168.100.8 --> sip:jakub-linux@192.168.100.8
+[1.3 - 15:34:44] >> Busy 486 (Obsadeny)sip:ipad@192.168.100.8 --> sip:jakub-linux@192.168.100.8
+[1.3 - 15:35:34] >> REGISTER sip:jakub-phone@192.168.100.8
+[1.3 - 15:35:36] >> REGISTER sip:ipad@192.168.100.8
+[1.3 - 15:35:40] >> INVITE (Zvonenie) sip:jakub-phone@192.168.100.8 --> sip:ipad@192.168.100.8
+[1.3 - 15:35:40] >> Trying 100 sip:jakub-phone@192.168.100.8 --> sip:ipad@192.168.100.8
+[1.3 - 15:35:40] >> Ringing 180 (Zvonenie) sip:jakub-phone@192.168.100.8 --> sip:ipad@192.168.100.8
+[1.3 - 15:36:12] >> REGISTER sip:jakub@192.168.100.8
+[1.3 - 15:36:25] >> Busy 486 (Obsadeny)sip:jakub-phone@192.168.100.8 --> sip:ipad@192.168.100.8

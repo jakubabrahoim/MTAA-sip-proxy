@@ -59,7 +59,9 @@ function logResponse(response) {
         var message = getTimeStamp() + ' >> ' + 'Trying 100 ' + response.headers.from['uri'] + ' --> ' + response.headers.to['uri'] + '\n';
     else if(response.status == '180')
         var message = getTimeStamp() + ' >> ' + 'Ringing 180 (Zvonenie) ' + response.headers.from['uri'] + ' --> ' + response.headers.to['uri'] + '\n';
-    else 
+    else if(response.status == '486')
+        var message = getTimeStamp() + ' >> ' + 'Busy 486 (Obsadeny)' + response.headers.from['uri'] + ' --> ' + response.headers.to['uri'] + '\n';
+    else
         return;
 
     addLog(message);
