@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "fs": "^0.0.1-security",
     "os": "^0.1.2",
     "sip": "^0.0.6"
   }

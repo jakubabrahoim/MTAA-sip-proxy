@@ -1,6 +1,8 @@
 var sip = require('sip');
 var proxy = require('sip/proxy');
 
+var fs = require('fs');
+
 var os = require('os');
 var interfaces = os.networkInterfaces();
 var wifiIp = interfaces['WiFi'][1].address;
@@ -14,6 +16,19 @@ const address = wifiIp;
 
 // "db" pouzivatelov
 var users = {};
+
+function getTimeStamp() {
+    var date = new Date();
+    return '[' + date.getDate() + '.' + (date.getMonth() + 1) + ' - ' + date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds() + ']';
+}
+
+function logRegister(request) {
+    var message = getTimeStamp() + ' >> ' + request.method + ' ' + request.headers.from['uri'] + '\n';
+
+    fs.appendFile('log.log', message, (error) => {
+        if (error) console.log(error);
+    })
+}
 
 proxy.start({port: port, address: address}, (request) => {
     console.log('Incoming from: ' + request.headers.from['uri']);
@@ -29,7 +44,8 @@ proxy.start({port: port, address: address}, (request) => {
         var response = sip.makeResponse(request, 200, 'Vsetko OK');
         response.headers.to.tag = Math.floor(Math.random() * 1e6);
         
-        //console.log(response);
+        logRegister(request);
+
         proxy.send(response);
     } else {
         // vytiahnem meno usera
@@ -45,7 +61,7 @@ proxy.start({port: port, address: address}, (request) => {
             }
 
             proxy.send(request, (response) => {
-                // pri vlastnom custom callbacku treba tento shift
+                // pri vlastnom custom callbacku treba tento shift -> odstani prvy header
                 response.headers.via.shift();
 
                 if(response.headers.contact) {
