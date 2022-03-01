@@ -22,12 +22,49 @@ function getTimeStamp() {
     return '[' + date.getDate() + '.' + (date.getMonth() + 1) + ' - ' + date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds() + ']';
 }
 
-function logRegister(request) {
-    var message = getTimeStamp() + ' >> ' + request.method + ' ' + request.headers.from['uri'] + '\n';
-
+function addLog(message) {
     fs.appendFile('log.log', message, (error) => {
         if (error) console.log(error);
-    })
+    });
+
+    return;
+}
+
+function logRegister(request) {
+    var message = getTimeStamp() + ' >> ' + request.method + ' ' + request.headers.from['uri'] + '\n';
+    addLog(message);
+
+    return;
+}
+
+function logRequest(request) {
+    if(request.method == 'INVITE')
+        var message = getTimeStamp() + ' >> ' + 'INVITE (Zvonenie) ' + request.headers.from['uri'] + ' --> ' + request.headers.to['uri'] + '\n';
+    else if(request.method == 'ACK')
+        var message = getTimeStamp() + ' >> ' + 'ACK (Zdvihnutie/Zacatie hovoru) ' + request.headers.from['uri'] + ' --> ' + request.headers.to['uri'] + '\n';
+    else if(request.method == 'BYE')
+        var message = getTimeStamp() + ' >> ' + 'BYE (Ukoncenie hovoru) ' + request.headers.from['uri'] + ' --> ' + request.headers.to['uri'] + '\n';
+    else 
+        return;
+
+    addLog(message);
+
+    return;
+}
+
+function logResponse(response) {
+    if(response.status == '603')
+        var message = getTimeStamp() + ' >> ' + 'Decline 603 (Odmietnutie) ' + response.headers.from['uri'] + ' --> ' + response.headers.to['uri'] + '\n';
+    else if(response.status == '100')
+        var message = getTimeStamp() + ' >> ' + 'Trying 100 ' + response.headers.from['uri'] + ' --> ' + response.headers.to['uri'] + '\n';
+    else if(response.status == '180')
+        var message = getTimeStamp() + ' >> ' + 'Ringing 180 (Zvonenie) ' + response.headers.from['uri'] + ' --> ' + response.headers.to['uri'] + '\n';
+    else 
+        return;
+
+    addLog(message);
+
+    return;
 }
 
 proxy.start({port: port, address: address}, (request) => {
@@ -60,6 +97,8 @@ proxy.start({port: port, address: address}, (request) => {
                 request.headers.contact[0].uri = 'sip:' + sip.parseUri(request.headers.contact[0].uri).user + '@' + address + ':' + port.toString();
             }
 
+            logRequest(request);
+
             proxy.send(request, (response) => {
                 // pri vlastnom custom callbacku treba tento shift -> odstani prvy header
                 response.headers.via.shift();
@@ -67,6 +106,8 @@ proxy.start({port: port, address: address}, (request) => {
                 if(response.headers.contact) {
                     response.headers.contact[0].uri = 'sip:' + sip.parseUri(response.headers.contact[0].uri).user + '@' + address + ':' + port.toString();
                 }
+
+                logResponse(response);
 
                 proxy.send(response);
             });
@@ -81,3 +122,4 @@ proxy.start({port: port, address: address}, (request) => {
 
     console.log('----------------------------------------');
 });
+
